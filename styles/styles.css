@@ -65,4 +65,7 @@
 .project-card .icon-btn:hover {
   background-color: rgb(226, 230, 234);
   transform: scale(1.1);
-}/*# sourceMappingURL=styles.css.map */
+}
+.custom-brand {
+  margin-left: 1.5rem; 
+}
