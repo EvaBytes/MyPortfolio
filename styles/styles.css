@@ -1,16 +1,64 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 @media only screen and (min-width: 1000px) {
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  body {
+    min-width: 320px;
   }
 }
-* body {
-  min-width: 320px;
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--navbar-bg) !important;
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--color-primary-light);
+  color: var(--text-color);
+}
+
+.btn-primary {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-light);
+}
+
+.footer-custom {
+  margin-left: 2rem;
+}
+
+:root {
+  --color-primary: #6C63FF;
+  --color-primary-light: #E6E6FA;
+  --color-accent: #A3F7BF;
+  --color-dark-bg: #1F1B24;
+  --color-light-text: #F4F4F4;
+  --color-body-text: #2E2E2E;
+  --bg-color: #ffffff;
+  --text-color: var(--color-body-text);
+  --navbar-bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --button-bg: var(--color-primary);
+  --button-text: #ffffff;
+}
+
+[data-theme=dark] {
+  --bg-color: var(--color-dark-bg);
+  --text-color: var(--color-light-text);
+  --navbar-bg: #2c2c35;
+  --card-bg: #2a2a3b;
+  --button-bg: var(--color-primary);
+  --button-text: #ffffff;
 }
 
 .project-card {
@@ -69,4 +117,8 @@
 
 .custom-brand {
   margin-left: 1.5rem;
+}
+
+.footer-custom {
+  margin-left: 2rem;
 }/*# sourceMappingURL=styles.css.map */
