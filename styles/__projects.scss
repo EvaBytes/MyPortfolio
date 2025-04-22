@@ -1,7 +1,7 @@
 .project-card {
     position: relative;
     overflow: hidden;
-    border-radius: 0.5rem;
+    border-radius: .5rem;
     height: 300px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -56,6 +56,10 @@
         transform: scale(1.1);
       }
     }
+  }
+
+  .custom-brand {
+    margin-left: 1.5rem; 
   }
   
   
