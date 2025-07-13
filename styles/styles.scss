@@ -1,44 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  @media only screen and (min-width: 1000px) {
-    body {
-      min-width: 320px;
-    }
-  }
-  
-  body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-  }
-  
-  .navbar {
-    background-color: var(--navbar-bg) !important;
-  }
-  
-  .project-card {
-    background-color: var(--card-bg);
-    border: 1px solid var(--color-primary-light);
-    color: var(--text-color);
-  }
-  
-  .btn-primary {
-    background-color: var(--button-bg);
-    color: var(--button-text);
-    border: none;
-  
-    &:hover {
-      background-color: var(--color-primary-light);
-    }
-  }
-  
-  .footer-custom {
-    margin-left: 2rem;
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import "__theme.scss";
-@import "__projects.scss";
+@import '../components/__header';
+@import '../components/__footer';
+@import '../components/__buttons';
+@import '../styles/_about';
+@import '../styles/_home';
+@import '../styles/_skills';
+@import '../styles/_contact';
