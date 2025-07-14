@@ -3,7 +3,8 @@
 @import '../components/__header';
 @import '../components/__footer';
 @import '../components/__buttons';
-@import '../styles/_about';
-@import '../styles/_home';
-@import '../styles/_skills';
-@import '../styles/_contact';
+@import './__main';
+@import './__about';
+@import './__home';
+@import './__skills';
+@import './__contact';
