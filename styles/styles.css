@@ -1,57 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
-.navbar {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: var(--z-fixed);
-  background-color: #ffffff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
-}
-
-.nav {
-  height: var(--header-height);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: var(--font-semi);
-}
-.nav-menu {
-  margin-bottom: var(--mb4);
-}
-.nav-link {
-  position: relative;
-  color: #ffffff;
-}
-.nav-link:hover::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0.18rem;
-  left: 0;
-  top: 2rem;
-  background-color: var(--first-color);
-}
-.nav-logo {
-  color: var(--second-color);
-}
-.nav-toggle {
-  color: var(--second-color);
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.active::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0.18rem;
-  left: 0;
-  top: 2rem;
-  background-color: var(--first-color);
-}
-
 .footer {
   background-color: var(--second-color);
   color: #ffffff;
@@ -88,7 +36,7 @@
   --header-height: 3rem;
   --font-semi: 600;
   --first-color: rgb(107, 142, 35);
-  --second-color: rgb(3, 3, 3);
+  --second-color: rgb(51, 51, 51);
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
@@ -231,6 +179,67 @@ img {
     display: none;
   }
 }
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: var(--font-semi);
+}
+
+.nav-item {
+  margin-bottom: var(--mb4);
+}
+
+.nav-link {
+  position: relative;
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  position: relative;
+}
+
+.nav-link:hover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+
+.nav-logo {
+  color: var(--second-color);
+}
+
+.nav-toggle {
+  color: var(--second-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+
 .home {
   height: calc(100vh - 3rem);
   row-gap: 1rem;
