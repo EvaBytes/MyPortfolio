@@ -1,0 +1,33 @@
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    column-gap: 2rem;
+    align-items: center;
+    text-align: left; 
+    padding: 0 2rem;
+}
+
+.about-subtitle {
+    margin-bottom: var(--mb2);
+}
+
+.about-img {
+    justify-self: center;
+}
+
+.about-img img {
+    width: 200px;
+    border-radius: .5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-img {
+        margin-bottom: 1.5rem;
+    }
+}
